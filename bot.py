@@ -831,8 +831,7 @@ async def cmd_bonus(u: Update, c: ContextTypes.DEFAULT_TYPE):
 
     verb = "added" if amount >= 0 else "removed"
     await u.message.reply_text(
-        f"✨ *{abs(amount)}* bonus points {verb}!\n"
-        f"🏅 Hello Ruaidhri, your all-time bonus tally is now *{new_total}* points.",
+        f"✨ {abs(amount)} bonus points {verb}! Tally: {new_total} points.",
         parse_mode=ParseMode.MARKDOWN)
 
 # ─── DAILY JOBS ───────────────────────────────────────────────────────────────
